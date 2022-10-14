@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select.option練習</title>
+</head>
+<body>
+    <!-- Select option-->
+    <p>
+        請輸入季節:<select name="season" id="">
+            <option value="spring">春天</option>
+            <option value="summer" selected>夏天</option><!-- Selected 預設-->
+            <option value="autumn">秋天</option>
+            <option value="winter">冬天</option>
+        </select>
+    </p>
+
+    <!-- size顯示選項數量 -->
+    <p>
+        請輸入季節:<select name="season" id="" size="3">
+            <option value="spring">春天</option>
+            <option value="summer">夏天</option>
+            <option value="autumn">秋天</option>
+            <option value="winter">冬天</option>
+        </select>
+    </p>
+
+    <!-- multiple 允許多選 -->
+    <p>
+        請輸入季節:<select name="season" id="" size="4" multiple>
+            <option value="spring">春天</option>
+            <option value="summer">夏天</option>
+            <option value="autumn">秋天</option>
+            <option value="winter">冬天</option>
+        </select>
+    </p>
+
+    <!-- textarea 文字區域 -->
+    <textarea name="poem" id="" cols="20" rows="5">
+    靜夜思  李白
+
+    床前明月光，疑是地上霜。
+    舉頭望明月，低頭思故鄉。
+
+    月光舖在床前的地上，
+    像是一層瑩白的濃霜。
+    抬頭眺望窗外的明月，
+    低頭思念久別的故鄉。        	
+    </textarea>
+
+    <!--wrap="off" 關閉換行-->
+    <textarea name="poem" id="" cols="20" rows="5" wrap="off">
+    靜夜思  李白
+
+    床前明月光，疑是地上霜。
+    舉頭望明月，低頭思故鄉。
+
+    月光舖在床前的地上，
+    像是一層瑩白的濃霜。
+    抬頭眺望窗外的明月，
+    低頭思念久別的故鄉。        	
+    </textarea>
+</body>
+</html>
