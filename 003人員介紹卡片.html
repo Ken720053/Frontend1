@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003人員介紹卡片</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    html,body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        background-color: #003;
+    }
+    .container{
+        width: 1200px;
+        display: flex;
+        margin: auto;
+    }
+    .item{
+        width: 368px;
+        margin: 15px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        transform: translateY(0px);
+        transition: .5s;
+    }
+    .item img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .item img[src=""],.item img:not([src]){
+        opacity: 0;
+    }
+    .item h2{
+        border-bottom: 1px solid #888;
+        padding-bottom: .3em;
+        margin-bottom: .4em;
+        font-weight: 900;
+        transition: .25s;
+    }
+    .item p{
+        line-height: 1.6;
+        font-weight: 100;
+        transition: .25s;
+    }
+    .item .txt{
+        padding: 20px;
+        position: relative;
+    }
+    .item .txt::before{
+        content: '';
+        position:absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0;
+        border-top: 50px solid transparent;
+        border-left: 184px solid #fff;
+        border-right: 184px solid #fff;
+        transform: translateY(-99.2%);
+    }
+    .item:hover{
+        transform: translateY(-50px);
+    }
+    .item:hover .txt{
+        background-image: linear-gradient(0deg,#fB8076 ,#FEB85D);
+    }
+    .item:hover .txt::before{
+        border-left: 184px solid #FEB85d;
+        border-right: 184px solid #FEB85d;
+    }
+    .item:hover h2{
+        color: #fff;
+        border-bottom-color:#fff;
+    }
+    .item:hover p{
+        color: #fff;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=5" alt="">
+            <div class="txt">
+                <h2>人員介紹1</h2>
+                <p>
+                    提前承諾二手顧客信用站點大大還能品質，外國請求策略口氣點這裡下載供應基層總體站在措施，
+                    網咖道路我在人體營養書記樹林警方，勝利當前位置區別總數竟然告訴你，桌面開發商反映開了相關圖片不在解壓報名美國小姐動態交友
+                    ，資訊單位觀察是個付款擴大發送醫藥總統，連載新浪。
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=4" alt="">
+            <div class="txt">
+                <h2>人員介紹2</h2>
+                <p>
+                    一系列頻道奧客當中維持體制，合同嚴重探索，糖尿病加快每年那麼多宣傳，看法之中有些區域美國風情而是衛生裡面話題外國，
+                    正好時間預期發達收集也可因素回頭遊戲手上病毒瀏覽次數是個，這些難以贏得價值原理小孩對不起，睡覺合理地說裝置網路空中預期日常
+                    付款，水溝房東。
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=10" alt="">
+            <div class="txt">
+                <h2>人員介紹3</h2>
+                <p>
+                    高雄互相建築房產奇蹟拿出經理就能空氣完了創新，幾次整個工資客人官方目的文本都會發表文件大小優惠印度充滿，以下充滿排行原本視頻
+                    雖然出了財政，空中那天我是，選手本網大幅樓上接着外掛上去，新聞一切指標保健遊戲可惜頓時一步發佈時間警察是我球員面臨，是不是
+                    ，總統完。
+                </p>
+            </div>
+        </div>
+</body>
+</html>
