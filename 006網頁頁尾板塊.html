@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>006網頁頁尾板塊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0px;
+        list-style: none;
+        font-family:'Noto Sans TC',sans-serif;
+    }
+    footer{
+        padding: 45px 0 0 0;
+        background:linear-gradient(-20deg,#3f5494,#08c7a5);
+    }
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+    }
+    .item{
+        width: 0px;
+        flex-grow: 1;
+        margin: 0 20px;
+    }
+    .item ul li {
+        padding: 5px 0px;
+    }
+    .item ul li a{
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 1.4;
+    }
+    .item ul li a:hover{
+        color: #fa0;
+    }
+    .item ul li a::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: #fa0;
+        transition: width .3s .3s;
+    }
+    .item ul .txt1 a::after{
+        content: '';
+        height: 2.5px;
+
+    }
+    .item ul li a:hover:after{
+        width: 100%;
+    }
+    .item h4{
+        font-size: 24px;
+        color: #fff;
+        border-bottom: 1px dotted #fff;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .conpyright{
+        width: 100%;
+        text-align: center;
+        margin: 45px 0 0;
+        padding: 12px 0px;
+        background-color: #3e5293;
+        font-size: 12px;
+        color: #70f6df;
+    }
+    .footer-subs{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-subs form{
+        display: flex;
+        width: 100%;
+        margin: auto 0px;   
+    }
+    .footer-subs input[type='text'],
+    .footer-subs input[type='submit']{
+        border: none;
+        padding: 5px 10px;
+    }
+    .footer-subs input[type='text']{
+        width: 0px;
+        flex-grow: 1;
+    }
+    .footer-subs input[type='submit']{
+        color: #fff;
+        background-color: #3e5293;
+    }
+</style>
+<body>
+    <footer>
+        <div class="container">
+            <div class="item">
+                <h4>關於暴力課程</h4>
+                <ul>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>課程目標</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>辦學理念</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>課程宗旨</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h4>課程列表</h4>
+                <ul>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>暴力網頁入門班</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>RWD網頁深入理解</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>CSS互動動畫設計</a></li>
+                    <li class="txt1"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Bootstrsp框架實務</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h4>服務課程</h4>
+                <ul>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>網站建置顧問</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>網站設計建置</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>網站規劃</a></li>
+                    <li class="txt1"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>企業教育訓練</a></li>
+                </ul>
+            </div>
+            <div class="item footer-subs">
+                <h4>訂閱電子報</h4>
+                <form action="">
+                    <input type="text" name="">
+                    <input type="submit" value="訂閱">
+                </form>
+            </div>
+        </div>
+        <div class="conpyright">
+            Copyright &copy; 2022 by Ken
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/e4aa0eeb13.js" crossorigin="anonymous"></script>
+</body>
+</html>
