@@ -309,6 +309,15 @@
     line-height: 32px;
     color: #333;
 }
+.map-container{
+    width: 100%;
+    padding-top: 75%;
+}
+.map-container iframe{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 
 /*footer*/
 .footer{
